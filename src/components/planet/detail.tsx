@@ -1,6 +1,6 @@
 import { ArrowDown2, Paintbucket } from "iconsax-react";
 import Films from "./films";
-import { Iplanet } from ".";
+import { Iplanet } from "../../services/planet/planet.module";
 
 interface Iprops {
    planet: Iplanet;
