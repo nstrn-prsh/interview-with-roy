@@ -50,8 +50,5 @@ describe('Detail Component', () => {
 
     // Check creation date
     expect(screen.getByText(`created in [${d.getFullYear()}-${d.getMonth()}-${d.getDay()}]`)).toBeInTheDocument();
-
-    // Check films component
-    // expect(screen.getByTestId('films')).toHaveTextContent(`${mockPlanet.films.length} films`);
   });
 });

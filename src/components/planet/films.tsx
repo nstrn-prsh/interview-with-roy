@@ -28,4 +28,3 @@ const Films = ({ item }: IfilmsProps) => {
 };
 
 export default Films;
-

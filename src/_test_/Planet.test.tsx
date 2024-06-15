@@ -11,7 +11,7 @@ vi.mock("../services/planet", () => ({
 
 describe("Planet Component", () => {
    beforeEach(() => {
-      vi.clearAllMocks(); // Clear mocks before each test to avoid interference
+      vi.clearAllMocks(); // Clear mocks before each test
    });
 
    it("renders skeletons while fetching", () => {
@@ -19,7 +19,7 @@ describe("Planet Component", () => {
       mockGetPlanets.mockImplementation(() => new Promise(() => {}));
 
       render(<Planet />);
-      const skeletons = screen.getAllByRole("alert"); // Assuming Skeleton components have role="alert"
+      const skeletons = screen.getAllByRole("alert");
       expect(skeletons).toHaveLength(5);
    });
 
