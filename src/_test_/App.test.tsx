@@ -8,7 +8,7 @@ describe('App Component', () => {
     render(<App />);
     const stateManagementElement = screen.getByTestId('state-management');
     expect(stateManagementElement).toBeInTheDocument();
-  });
+  }); 
 
   it('renders Planet component', () => {
     render(<App />);
