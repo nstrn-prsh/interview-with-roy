@@ -11,7 +11,7 @@ const Detail = ({ planet }: Iprops) => {
    const d = new Date(dateObj);
 
    return (
-      <div className='flex bg-card p-5 m-4 rounded-md '>
+      <div className='flex bg-card p-5 m-4 rounded-md ' data-testid="detail">
          <div className='flex-1 w-64 '>
             <p className='text-title'>
                created at{" "}

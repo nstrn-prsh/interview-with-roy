@@ -60,3 +60,9 @@ NOTE:
 - Extra points if you can add micro interactions
 
 - Extra points if you can do this in TailwindCSS 
+
+I wanted to check with you if it is possible for you to improve your assessment by:
+
+- adding test code (recommended)
+
+- refactor (as you see fit)

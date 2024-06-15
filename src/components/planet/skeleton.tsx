@@ -24,7 +24,7 @@ const Skeleton = (props: IProps) => {
          break;
    }
    return (
-      <div
+      <div  role="alert"
          className={`${
             fill === "gray" ? "bg-gray-400" : "bg-gray-200"
          } ${className} animate-pulse ${classNameRounded}`}

@@ -3,7 +3,7 @@ import CounterBtn from "./counterBtn";
 
 const StateManagement = () => {
    return (
-         <div className='flex bg-primaryTitle py-4 justify-around sm:flex-col'>
+         <div className='flex bg-primaryTitle py-4 justify-around sm:flex-col' data-testid="state-management">
             <h2 className='content-center mx-2'>state management:</h2>
             <Counter />
             <CounterBtn />

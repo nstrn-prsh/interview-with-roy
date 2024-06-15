@@ -10,17 +10,22 @@ const Films = ({ item }: IfilmsProps) => {
       fetchFilm(item, setList, setIsFetching);
    }, []);
 
-   return isFetching ? (
-      <span className='text-disabledTitle'>...</span>
-   ) : (
-      List.map((item, index) =>
-         index === List.length - 1 ? (
-            <span className='text-disabledTitle'>{item}</span>
+   return (
+      <div data-testid='films'>
+         {isFetching ? (
+            <span className='text-disabledTitle'>...</span>
          ) : (
-            <span className='text-disabledTitle'>{item} ,</span>
-         )
-      )
+            List.map((item, index) =>
+               index === List.length - 1 ? (
+                  <span className='text-disabledTitle'>{item}</span>
+               ) : (
+                  <span className='text-disabledTitle'>{item} ,</span>
+               )
+            )
+         )}
+      </div>
    );
 };
 
 export default Films;
+

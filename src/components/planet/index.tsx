@@ -21,7 +21,7 @@ const Planet = () => {
    }, []);
 
    return (
-      <>
+      <div data-testid='planet'>
          {isFetching ? (
             <div className='space-y-1'>
                {[1, 2, 3, 4, 5].map((item, index) => (
@@ -43,7 +43,7 @@ const Planet = () => {
                ))}
             </ul>
          )}
-      </>
+      </div>
    );
 };
 
